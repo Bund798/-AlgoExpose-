@@ -1,0 +1,26 @@
+body{
+    background-color: #020126;
+    box-sizing: border-box;
+}
+.options{
+    margin:10px;
+}
+.flex-container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    transition: 2s all ease;
+    transform:scale(-1);
+}
+
+.flex-item{
+    background: #F230D2;
+    border: 1pt solid black;
+    width: 10px;
+    border-radius: 5px;
+    margin:2px;
+    transition: 0.1s all ease;
+}

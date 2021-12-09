@@ -1,0 +1,18 @@
+body{
+    background-color:#020126;
+    box-sizing: border-box;
+
+}
+
+.card,.cardbody{
+    width:300px;
+    background-color: cyan;
+    margin: 20px;
+}
+footer{
+    background-color: black;
+    height:30px;
+    width:100%;
+    position: fixed;
+   bottom:0 ;
+}
