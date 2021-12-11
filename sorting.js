@@ -1,21 +1,34 @@
-function createNewArray(noOfBars = 60) {
+
+createNewArray()
+
+ 
+//to receive the input speed input
+/*let delay=260;
+    let delayEle=document.querySelector('#speed_input');
+delayEle.addEventListener('input',function(){
+    delay=320-parseInt(delayEle.value);
+})*/
+
+
+function createNewArray(count=50) {
     // calling helper function to delete old bars from dom
     deleteChild();
 
     // creating an array of random numbers 
-    array = [];
-    for (let i = 0; i < noOfBars; i++) {
+     let array = [];
+    for (let i = 0; i < count; i++) {
         array.push(Math.floor(Math.random() * 250) + 1);
     }
- 
+    
 
     // select the div #bars element
     const bars = document.querySelector("#bars");
 
     // create multiple element div using loop and adding class 'bar col'
-    for (let i = 0; i < noOfBars; i++) {
+    for (let i = 0; i < count; i++) {
         const bar = document.createElement("div");
         bar.style.height = `${array[i]*2}px`;
+       
         bar.classList.add('bar');
         bar.classList.add('flex-item');
         bar.classList.add(`barNo${i}`);
@@ -28,11 +41,27 @@ function deleteChild() {
     const bar = document.querySelector("#bars");
     bar.innerHTML = '';
 }
+//
 
-// Selecting newarray button from DOM and adding eventlistener
-const Create = document.querySelector(".create");
-Create.addEventListener("click", function(){
+document.querySelector('.go').addEventListener('click',(e)=>{
+    const Algo=document.querySelector('#algo');
+console.log(Algo.value);
+const val=Algo.value;
+if(val=='bubbleSort')
+document.querySelector('.Sort').addEventListener('click',async function(){
    
-   
-    createNewArray(14);
+    
+   await  BubbleSort();
+   document.querySelector('.Sort').disabled=false;
+
+})
 });
+
+
+
+
+
+
+
+
+
