@@ -41,20 +41,29 @@ function deleteChild() {
     const bar = document.querySelector("#bars");
     bar.innerHTML = '';
 }
-//
+//to get user input algo
 
 document.querySelector('.go').addEventListener('click',(e)=>{
     const Algo=document.querySelector('#algo');
 console.log(Algo.value);
 const val=Algo.value;
 if(val=='bubbleSort')
-document.querySelector('.Sort').addEventListener('click',async function(){
+{document.querySelector('.Sort').addEventListener('click',async function(){
    
-    
-   await  BubbleSort();
+    document.querySelector('.Sort').disabled=true;
+    await  BubbleSort();
    document.querySelector('.Sort').disabled=false;
 
-})
+});}
+else
+if(val=='selectionSort')
+{document.querySelector('.Sort').addEventListener('click',async function(){
+   
+    document.querySelector('.Sort').disabled=true;
+    await  SelectionSort();
+   document.querySelector('.Sort').disabled=false;
+
+});}
 });
 
 

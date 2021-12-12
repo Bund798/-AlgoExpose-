@@ -1,19 +1,22 @@
 body{
     background-color: #020126;
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 .options{
     margin:10px;
 }
 .flex-container{
     margin-top: 20px;
-    margin-left: 20px;
+   
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
     height: 500px;
     justify-content: center;
     transition: 2s all ease;
+    transform:scale(-1);
     
 }
 

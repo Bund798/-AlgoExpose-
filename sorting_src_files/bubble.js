@@ -1,21 +1,14 @@
-// Promise to swap two blocks
+// Promise to swap two bars
 const container =document.querySelector('.flex-container');
 function swap(el1, el2) {
     return new Promise((resolve) => {
   
-        // For exchanging styles of two blocks
+        // For exchanging styles of two bars
         var temp = el1.style.height;
         el1.style.height = el2.style.height;
         el2.style.height = temp;
   
-        /*window.requestAnimationFrame(function() {
-  
-            // For waiting for .25 sec
-            setTimeout(() => {
-                container.insertBefore(el2, el1);
-                resolve();
-            }, 260);
-        });*/
+       
     });
 }
 
@@ -53,8 +46,8 @@ async function BubbleSort(delay = 100) {
             }
   
             // Changing the color to the previous one
-            bars[j].style.backgroundColor = "#6b5b95";
-            bars[j + 1].style.backgroundColor = "#6b5b95";
+            bars[j].style.backgroundColor = "#F230D2";
+            bars[j + 1].style.backgroundColor = "#F230D2";
             
         } 
   
