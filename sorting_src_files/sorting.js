@@ -64,6 +64,15 @@ if(val=='selectionSort')
    document.querySelector('.Sort').disabled=false;
 
 });}
+else
+if(val=='insertionSort')
+{document.querySelector('.Sort').addEventListener('click',async function(){
+   
+    document.querySelector('.Sort').disabled=true;
+    await  InsertionSort();
+   document.querySelector('.Sort').disabled=false;
+
+});}
 });
 
 
