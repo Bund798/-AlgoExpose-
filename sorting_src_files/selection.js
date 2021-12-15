@@ -42,7 +42,7 @@ async function SelectionSort(){
        await new Promise((resolve) =>
          setTimeout(() => {
            resolve();
-         }, 300)
+         }, delay)
        );
      // To swap ith and (min_idx)th bar
      swap(bars[i],bars[MinIndex]);
@@ -51,7 +51,7 @@ async function SelectionSort(){
      await new Promise((resolve) =>
        setTimeout(() => {
          resolve();
-       }, 300)
+       }, delay)
      );
    
      // Provide skyblue color to the (min-idx)th bar

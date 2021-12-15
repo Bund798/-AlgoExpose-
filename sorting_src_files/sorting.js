@@ -42,7 +42,6 @@ function deleteChild() {
     bar.innerHTML = '';
 }
 //to get user input algo
-
 document.querySelector('.go').addEventListener('click',(e)=>{
     const Algo=document.querySelector('#algo');
 console.log(Algo.value);
@@ -70,6 +69,17 @@ if(val=='insertionSort')
    
     document.querySelector('.Sort').disabled=true;
     await  InsertionSort();
+   document.querySelector('.Sort').disabled=false;
+
+});}
+else
+if(val=='mergeSort')
+{document.querySelector('.Sort').addEventListener('click',async function(){
+   
+    document.querySelector('.Sort').disabled=true;
+    let bars=document.querySelectorAll('.bar');
+
+    await  MergeSort(bars,0,parseInt(bars.length)-1);
    document.querySelector('.Sort').disabled=false;
 
 });}

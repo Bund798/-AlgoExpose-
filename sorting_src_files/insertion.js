@@ -38,7 +38,7 @@ bars[i].style.backgroundColor = "darkblue";
       await new Promise((resolve) =>
         setTimeout(() => {
           resolve();
-        }, 600)
+        },delay)
       );
         
       // Provide lightgreen color to the sorted part
@@ -54,7 +54,7 @@ bars[i].style.backgroundColor = "darkblue";
     await new Promise((resolve) =>
       setTimeout(() => {
         resolve();
-      }, 600)
+      },delay)
     );
       
     // Provide light green color to the ith bar

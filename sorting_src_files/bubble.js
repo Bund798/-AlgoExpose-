@@ -11,9 +11,15 @@ function swap(el1, el2) {
        
     });
 }
+//to receive the input speed input
+let delay=260;
+    let delayEle=document.querySelector('#speed_input');
+delayEle.addEventListener('input',function(){
+    delay=320-parseInt(delayEle.value);
+})
 
 // Asynchronous BubbleSort function
-async function BubbleSort(delay = 100) {
+async function BubbleSort() {
     var bars = document.querySelectorAll(".bar");
   
     // BubbleSort Algorithm
@@ -34,15 +40,15 @@ async function BubbleSort(delay = 100) {
             // To compare value of two bar
             if (value1 >value2) {
                 swap(bars[j], bars[j+1]);
-                // To wait for .1 sec
+                
             await new Promise((resolve) =>
             setTimeout(() => {
                 resolve();
-            }, 100)
+            }, delay)
         );
 
                 
-                //bars = document.querySelectorAll(".bar");
+               
             }
   
             // Changing the color to the previous one
