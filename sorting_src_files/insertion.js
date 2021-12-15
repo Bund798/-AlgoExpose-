@@ -27,7 +27,8 @@ bars[i].style.backgroundColor = "darkblue";
       bars[j].style.backgroundColor = "darkblue";
         
       // For placing jth element over (j+1)th element
-      bars[j + 1].style.height = bars[j].style.height;
+     
+      swap(bars[j+1],bars[j]);
      
   
       // Assign j-1 to j
