@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/sorting_style.css">
-    <title>Sorting</title>
+    <link rel="stylesheet" href="css/searching_style.css">
+    <title>Searching</title>
 </head>
 <body>
     <nav class="navbar bg-primary">
@@ -23,10 +23,9 @@
                         <button type="button" class="btn btn-outline-primary btn-dark create " onclick='createNewArray()' >
                         CREATE
                         </button>
-                       
                     </div>
-               
-                <button type="button" class="btn btn-outline-primary btn-dark Sort" >Sort</button>
+                   
+                    
             </div>
             <div class="col" id="input" style="color:white;">
                 <label for="inputRange">Speed</label>
@@ -37,12 +36,10 @@
             </div>
             <div class="input-group">
                 <select class="custom-select" id="algo" arial=''>
-                  <option selected> Sorting Algorithm</option>
-                  <option value="bubbleSort">Bubble Sort</option>
-                  <option value="selectionSort">Selection Sort</option>
-                  <option value="insertionSort">Insertion Sort</option>
-                  <option value="quickSort">Quick Sort</option>
-                  <option value="mergeSort">Merge Sort</option>
+                  <option selected> Searching Algorithm</option>
+                  <option value="binarySerach">Binary Search</option>
+                  <option value="linearSerach">Linear Search</option>
+                 
                 </select>
                 <div class="input-group-append">
                   <button class="btn btn-outline-primary btn-dark  go" type="button">Done</button>
@@ -51,15 +48,17 @@
            
     </div>
     <div id="bars" class="flex-container"></div>
+    <input type="text" id="serachEle"name="Number" placeholder="Enter the number to be serached:">
+    <button type="button" class="btn btn-outline-primary btn-dark Search" >Serach</button>
+    <div id="text" style="color:#fff"></div>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> 
-    <script src='sorting_src_files/bubble.js'></script>
-    <script src='sorting_src_files/selection.js'></script>
-    <script src='sorting_src_files/insertion.js'></script>
-    <script src='sorting_src_files/merge.js'></script>
-    <script src='sorting_src_files/sorting.js'></script>  
+    <script src="/searching_src_files/linear.js"></script>
+    <script src="/searching_src_files/seraching.js"></script>
    
+ 
+    
     
     
   
