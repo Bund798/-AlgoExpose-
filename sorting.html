@@ -9,33 +9,33 @@
     <title>Sorting</title>
 </head>
 <body>
-    <nav class="navbar bg-primary">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">AlgoExpose</span>
-        </div>
-    </nav>
-    
+    <div class="header">
+        <span>AlgoExpose</span>
+        
+      </div>
+      <hr class="gradient_underline" />
     <div class='options'>
         <div class="row">
-            <div class="col gap-2 d-sm-flex" id="newArray">
+         
                
-                    <div class="btn-group" style="width:300px">
+                    <div class="btn-group  col-sm" style="margin:auto;">
                         <button type="button" class="btn btn-outline-primary btn-dark create " onclick='createNewArray()' >
                         CREATE
                         </button>
                        
-                    </div>
+                    
                
-                <button type="button" class="btn btn-outline-primary btn-dark Sort" >Sort</button>
-            </div>
-            <div class="col" id="input" style="color:white;">
+                <button type="button" class="btn btn-outline-primary btn-dark Sort " >SORT</button>
+                    </div>
+           
+            <div class="col-sm" id="input" style="color:white;">
                 <label for="inputRange">Speed</label>
                 <br>
                 <span id="speed">
                     slow<input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60 id="inputRange"> fast
                 </span>
             </div>
-            <div class="input-group">
+            <div class="input-group col-sm">
                 <select class="custom-select" id="algo" arial=''>
                   <option selected> Sorting Algorithm</option>
                   <option value="bubbleSort">Bubble Sort</option>
@@ -44,10 +44,11 @@
                   <option value="quickSort">Quick Sort</option>
                   <option value="mergeSort">Merge Sort</option>
                 </select>
-                <div class="input-group-append">
+                <div class="input-group-append col-sm">
                   <button class="btn btn-outline-primary btn-dark  go" type="button">Done</button>
                 </div>
               </div>
+            
            
     </div>
     <div id="bars" class="flex-container"></div>

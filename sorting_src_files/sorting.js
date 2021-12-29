@@ -13,7 +13,7 @@ delayEle.addEventListener('input',function(){
 function createNewArray(count=50) {
     // calling helper function to delete old bars from dom
     deleteChild();
-
+  
     // creating an array of random numbers 
      let array = [];
     for (let i = 0; i < count; i++) {
@@ -23,12 +23,14 @@ function createNewArray(count=50) {
 
     // select the div #bars element
     const bars = document.querySelector("#bars");
+    //width of the external div block
+    const width=parseInt(bars.clientWidth);
 
     // create multiple element div using loop and adding class 'bar col'
     for (let i = 0; i < count; i++) {
         const bar = document.createElement("div");
         bar.style.height = `${array[i]*2}px`;
-       
+       bar.style.width=`${width/50}px`;
         bar.classList.add('bar');
         bar.classList.add('flex-item');
         bar.classList.add(`barNo${i}`);
@@ -52,6 +54,7 @@ if(val=='bubbleSort')
     document.querySelector('.Sort').disabled=true;
     await  BubbleSort();
    document.querySelector('.Sort').disabled=false;
+   setTimeout(location.reload(),100000);
 
 });}
 else
@@ -61,6 +64,7 @@ if(val=='selectionSort')
     document.querySelector('.Sort').disabled=true;
     await  SelectionSort();
    document.querySelector('.Sort').disabled=false;
+   setTimeout(location.reload(),100000);
 
 });}
 else
@@ -70,6 +74,7 @@ if(val=='insertionSort')
     document.querySelector('.Sort').disabled=true;
     await  InsertionSort();
    document.querySelector('.Sort').disabled=false;
+   setTimeout(location.reload(),100000);
 
 });}
 else
@@ -81,6 +86,7 @@ if(val=='mergeSort')
 
     await  MergeSort(bars,0,parseInt(bars.length)-1);
    document.querySelector('.Sort').disabled=false;
+   setTimeout(location.reload(),100000);
 
 });}
 });
