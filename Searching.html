@@ -13,11 +13,12 @@
         <span>AlgoExpose</span>
         
       </div>
-      <hr class="gradient_underline" />
+      <hr class="gradient_underline" style="height:8px;" />
     
     <div class='options'>
+      <div class="container">
         <div class="row">
-            <div class="col gap-2 d-sm-flex col-sm" >
+            <div class="col gap-2 d-sm-flex col" >
                
                     <div class="btn-group" >
                         <button type="button" class="btn btn-outline-primary btn-dark create " onclick='createNewArray()' >
@@ -31,9 +32,16 @@
                 <label for="inputRange">Speed</label>
                 <br>
                 <span id="speed">
-                    slow<input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60 id="inputRange"> fast
+                  <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60 id="inputRange"> 
                 </span>
             </div>
+            <div class="col-sm" id="input" style="color:white">
+              <label for="inputRange">Array Size</label>
+              <br>
+              <span id="size">
+                 <input id="size_input" type="range" min="20" max="100" stepDown=10 value=50 id="inputRange"> 
+              </span>
+          </div>
             <div class="input-group col-sm">
                 <select class="custom-select" id="algo" arial=''>
                   <option selected> Searching Algorithm</option>
@@ -45,10 +53,12 @@
                   <button class="btn btn-outline-primary btn-dark  go" type="button">Done</button>
                 </div>
               </div>
-           
+            </div>
     </div>
-    <div id="bars" class="flex-container"></div>
-    <input type="text" id="serachEle"name="Number" placeholder="Enter the number to be serached:">
+    <div id="bars" class="flex-container" ></div>
+   <label  style="color:white" for="Number">Enter the Number to be searched</label>
+<br>
+    <input type="text" id="serachEle"name="Number" >
     <button type="button" class="btn btn-outline-primary btn-dark Search" >Serach</button>
     <div id="text" style="color:#fff"></div>
     

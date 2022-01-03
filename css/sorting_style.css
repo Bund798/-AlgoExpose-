@@ -1,11 +1,37 @@
-body{
-    background-color:#393E46;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*{
     box-sizing: border-box;
     margin:0;
     padding:0;
-    
-  font-family: "Roboto", sans-serif;
 }
+
+    body{
+   
+        background-color:#393E46;
+    
+    
+     
+      font-family: "Roboto", sans-serif;
+      color: #10182f;
+      
+    }
+    .header{
+    
+        padding:20px;
+      
+        background-color: #222831;
+       color:#FFD369;
+          width:100%;
+         
+      }
+      .gradient_underline{
+        background: linear-gradient(90deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+         
+          
+          box-shadow: 0px  4px 5px black;
+         margin-top:0;
+      }
+
 .options{
     margin:10px;
 }
@@ -37,19 +63,3 @@ body{
     margin:auto;
 
 }
-.header{
-    
-    padding:20px;
-  
-    background-color: #222831;
-   color:#FFD369;
-      width:100%;
-     
-  }
-  .gradient_underline{
-      background: linear-gradient(90deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
-      height:8px;
-      border: 1px solid #222831;
-      box-shadow: 0px  4px 5px black;
-     
-  }

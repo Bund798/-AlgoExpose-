@@ -12,7 +12,7 @@ output.innerText = "";
 // BinarySearch Algorithm
 
 let start = 0;
-let end = 50;
+let end =size;
 let flag = 0;
 while (start <= end) {
 	//Middle index

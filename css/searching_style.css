@@ -47,7 +47,7 @@ body{
   }
   .gradient_underline{
       background: linear-gradient(90deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
-      height:8px;
+      margin-top:0;
       border: 1px solid #222831;
       box-shadow: 0px  4px 5px black;
      

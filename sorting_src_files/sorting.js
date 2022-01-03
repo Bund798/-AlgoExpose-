@@ -1,13 +1,16 @@
+createNewArray(50);
+//to get user input size of array
 
-createNewArray()
+    let sizeEle=document.querySelector('#size_input');
+sizeEle.addEventListener('input',function(){
+  
+    createNewArray(parseInt(sizeEle.value));
+   
+  
+});
 
  
-//to receive the input speed input
-/*let delay=260;
-    let delayEle=document.querySelector('#speed_input');
-delayEle.addEventListener('input',function(){
-    delay=320-parseInt(delayEle.value);
-})*/
+
 
 
 function createNewArray(count=50) {

@@ -11,14 +11,14 @@
 <body>
     <div class="header">
         <span>AlgoExpose</span>
-        
-      </div>
-      <hr class="gradient_underline" />
-    <div class='options'>
+       
+      </div> <hr class="gradient_underline" style="height:8px;" />
+      
+    <div class='options container'>
         <div class="row">
          
                
-                    <div class="btn-group  col-sm" style="margin:auto;">
+                    <div class="btn-group  col" style="margin:auto;">
                         <button type="button" class="btn btn-outline-primary btn-dark create " onclick='createNewArray()' >
                         CREATE
                         </button>
@@ -28,20 +28,27 @@
                 <button type="button" class="btn btn-outline-primary btn-dark Sort " >SORT</button>
                     </div>
            
-            <div class="col-sm" id="input" style="color:white;">
+            <div class="col" id="input" style="color:white;">
                 <label for="inputRange">Speed</label>
                 <br>
                 <span id="speed">
-                    slow<input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60 id="inputRange"> fast
+                   <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60 id="inputRange"> 
+                </span>
+              </div>
+              <div class="col" style="color:white;">
+                <label for="inputRange">Array Size</label>
+                <br>
+                <span id="size">
+                 <input id="size_input" type="range" min="20" max="100" stepDown=10 value=50 id="inputRange"> 
                 </span>
             </div>
-            <div class="input-group col-sm">
-                <select class="custom-select" id="algo" arial=''>
+            <div class="input-group col">
+                <select class="custom-select" id="algo" >
                   <option selected> Sorting Algorithm</option>
                   <option value="bubbleSort">Bubble Sort</option>
                   <option value="selectionSort">Selection Sort</option>
                   <option value="insertionSort">Insertion Sort</option>
-                  <option value="quickSort">Quick Sort</option>
+                  
                   <option value="mergeSort">Merge Sort</option>
                 </select>
                 <div class="input-group-append col-sm">
