@@ -33,7 +33,7 @@ function createNewArray(count=50) {
     for (let i = 0; i < count; i++) {
         const bar = document.createElement("div");
         bar.style.height = `${array[i]*2}px`;
-       bar.style.width=`${width/50}px`;
+       bar.style.width=`${width/count}px`;
         bar.classList.add('bar');
         bar.classList.add('flex-item');
         bar.classList.add(`barNo${i}`);

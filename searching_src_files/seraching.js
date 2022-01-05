@@ -41,7 +41,7 @@ function createNewArray(count=50,doSort=false) {
     for (let i = 0; i < count; i++) {
         const bar = document.createElement("div");
         bar.style.height = `${array[i] * 3}px`;
-       bar.style.width=`${width/50}px`
+       bar.style.width=`${width/count}px`
         bar.classList.add('bar');
         bar.classList.add('flex-item');
         bar.classList.add(`barNo${i}`);
@@ -67,7 +67,7 @@ if(val=='linearSerach')
     document.querySelector('.Search').disabled=true;
     await  LinearSearch(delay);
    document.querySelector('.Search').disabled=false;
-   setTimeout(location.reload(),100000);
+   
 
 });}
 else
@@ -75,11 +75,11 @@ if(val=='binarySearch')
 {document.querySelector('.Search').addEventListener('click',async function(){
    
     document.querySelector('.Search').disabled=true;
-    createNewArray(size,true);
+    createNewArray(sizeEle.value,true);
     console.log("array sorted");
     await  BinarySearch(delay);
    document.querySelector('.Search').disabled=false;
-   setTimeout(location.reload(),100000);
+   
 
 });}
 

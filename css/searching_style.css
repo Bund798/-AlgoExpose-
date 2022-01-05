@@ -15,7 +15,7 @@ body{
     display: flex;
     flex-wrap: nowrap;
     width: 80%;
-    height: 500px;
+    height: 400px;
     justify-content: center;
     transition: 2s all ease;
    margin:auto;
@@ -28,7 +28,7 @@ body{
     border: 1pt solid black;
     width: 20px;
     border-radius: 5px;
-   margin:2px;
+   
     transition: 0.1s all ease;
 }
 .row{

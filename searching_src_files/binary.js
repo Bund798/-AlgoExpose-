@@ -12,7 +12,7 @@ output.innerText = "";
 // BinarySearch Algorithm
 
 let start = 0;
-let end =size;
+let end =document.querySelectorAll(".bar").length;
 let flag = 0;
 while (start <= end) {
 	//Middle index
