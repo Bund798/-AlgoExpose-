@@ -21,5 +21,5 @@ These where the various algorithm that are demonstrated.
 
 
 
-**This site was built using [Netlify] (algoexpose.netlify.app ) **
+**This site was deployed using [Netlify](http://algoexpose.netlify.app)**
 
